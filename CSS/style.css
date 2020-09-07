@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
+  nav .container {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "gotham-bold";
+  src: url(./fonts/Gotham-Bold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "gotham-rounded-light";
+  src: url(./fonts/Gotham-Rounded-Light.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-light";
+  src: url(./fonts/helvetica-neue-light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-medium";
+  src: url(./fonts/Helvetica-Neue-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-bold";
+  src: url(./fonts/Helvetica-Neue-Bold.ttf) format("truetype");
+}
+
+.navbar {
+  background-color: #383838;
+}
+
+.navbar .fa-gamepad,
+.navbar .fa-bars {
+  color: #d35266;
+}
+
+.navbar .navbar-toggler {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navbar a,
+.navbar .navbar-toggler {
+  color: #888888 !important;
+}
+
+main .search-section {
+  background-color: #d35266;
+}
+
+main .search-section h1,
+main .search-section h6 {
+  text-align: center;
+  color: white;
+}
+
+main .search-section form #console-select,
+main .search-section form #category-select,
+main .search-section form #search-box,
+main .search-section form .search-btn {
+  height: 50px;
+}
+
+main .search-section form .search-btn {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+  background-color: #383838;
+  color: #888888;
+}
+
+main .top-picks h5 {
+  color: #888888;
+}
+
+main .top-picks .fa-chevron-left,
+main .top-picks .fa-chevron-right {
+  color: #d35266;
+}
+
+main .top-picks img {
+  height: 35vh;
+  width: 90%;
+}
+
+main .categories-section h5 {
+  color: #888888;
+}
+/*# sourceMappingURL=style.css.map */

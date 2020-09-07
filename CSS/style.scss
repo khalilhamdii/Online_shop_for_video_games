@@ -1,0 +1,116 @@
+// CSS reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
+  nav .container {
+    width: 100%;
+  }
+}
+
+// Typography
+@font-face {
+  font-family: "gotham-bold";
+  src: url(./fonts/Gotham-Bold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "gotham-rounded-light";
+  src: url(./fonts/Gotham-Rounded-Light.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-light";
+  src: url(./fonts/helvetica-neue-light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-medium";
+  src: url(./fonts/Helvetica-Neue-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-bold";
+  src: url(./fonts/Helvetica-Neue-Bold.ttf) format("truetype");
+}
+
+// Colors
+
+$custom-pink: #d35266;
+$custom-gray: #888888;
+$custom-dark-gray: #383838;
+
+// Navbar styling
+
+.navbar {
+  background-color: $custom-dark-gray;
+  .fa-gamepad,
+  .fa-bars {
+    color: $custom-pink;
+  }
+
+  .navbar-toggler {
+    align-self: center;
+  }
+  a,
+  .navbar-toggler {
+    color: $custom-gray !important;
+  }
+}
+
+main {
+  .search-section {
+    background-color: $custom-pink;
+    h1,
+    h6 {
+      text-align: center;
+      color: white;
+    }
+
+    form {
+      #console-select,
+      #category-select,
+      #search-box,
+      .search-btn {
+        height: 50px;
+      }
+
+      .search-btn {
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        border-radius: 0.2rem;
+        background-color: $custom-dark-gray;
+        color: #888888;
+      }
+    }
+  }
+
+  .top-picks {
+    h5 {
+      color: $custom-gray;
+    }
+
+    .fa-chevron-left,
+    .fa-chevron-right {
+      color: $custom-pink;
+    }
+
+    img {
+      height: 35vh;
+      width: 90%;
+    }
+  }
+
+  .categories-section {
+    h5 {
+      color: $custom-gray;
+    }
+  }
+}

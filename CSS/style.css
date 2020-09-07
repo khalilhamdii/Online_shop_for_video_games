@@ -14,6 +14,12 @@
   }
 }
 
+@media (min-width: 992px) {
+  .custom-col-lg-3 {
+    max-width: 23% !important;
+  }
+}
+
 @font-face {
   font-family: "gotham-bold";
   src: url(./fonts/Gotham-Bold.otf) format("truetype");
@@ -37,6 +43,12 @@
 @font-face {
   font-family: "helvetica-neue-bold";
   src: url(./fonts/Helvetica-Neue-Bold.ttf) format("truetype");
+}
+
+.box-shadow {
+  -webkit-box-shadow: 1px 1px 8px 1px #dcdcdc;
+          box-shadow: 1px 1px 8px 1px #dcdcdc;
+  border: 1px solid #cacaca;
 }
 
 .navbar {
@@ -85,21 +97,46 @@ main .search-section form .search-btn {
   color: #888888;
 }
 
-main .top-picks h5 {
+main .featured-games h5 {
   color: #888888;
 }
 
-main .top-picks .fa-chevron-left,
-main .top-picks .fa-chevron-right {
+main .featured-games .fa-chevron-left,
+main .featured-games .fa-chevron-right {
   color: #d35266;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
 }
 
-main .top-picks img {
+main .featured-games img {
   height: 35vh;
   width: 90%;
 }
 
 main .categories-section h5 {
   color: #888888;
+}
+
+main .categories-section .items-container .item {
+  background-color: white;
+}
+
+main .categories-section .items-container .item h5 {
+  color: #d35266;
+}
+
+main .categories-section .items-container .item #oldprice {
+  text-decoration: line-through;
+}
+
+main .categories-section .items-container .item #newprice {
+  font-weight: bold;
+  color: #d35266;
+  font-size: 1.2em;
+}
+
+main .categories-section .items-container .item .fa-plus-square {
+  color: #d35266;
 }
 /*# sourceMappingURL=style.css.map */

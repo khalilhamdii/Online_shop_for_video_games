@@ -7,10 +7,18 @@
   text-decoration: none;
 }
 
+// Media Queries
+
 @media (max-width: 576px) {
   /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
   nav .container {
     width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-col-lg-3 {
+    max-width: 23% !important;
   }
 }
 
@@ -45,6 +53,13 @@
 $custom-pink: #d35266;
 $custom-gray: #888888;
 $custom-dark-gray: #383838;
+
+// Custom classes
+
+.box-shadow {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  border: 1px solid #cacaca;
+}
 
 // Navbar styling
 
@@ -92,7 +107,7 @@ main {
     }
   }
 
-  .top-picks {
+  .featured-games {
     h5 {
       color: $custom-gray;
     }
@@ -100,6 +115,9 @@ main {
     .fa-chevron-left,
     .fa-chevron-right {
       color: $custom-pink;
+      border-radius: 50%;
+      padding: 10px;
+      -webkit-box-shadow: 1px 1px 1px 1px #ccc;
     }
 
     img {
@@ -111,6 +129,26 @@ main {
   .categories-section {
     h5 {
       color: $custom-gray;
+    }
+
+    .items-container {
+      .item {
+        h5 {
+          color: $custom-pink;
+        }
+        background-color: white;
+        #oldprice {
+          text-decoration: line-through;
+        }
+        #newprice {
+          font-weight: bold;
+          color: $custom-pink;
+          font-size: 1.2em;
+        }
+        .fa-plus-square {
+          color: $custom-pink;
+        }
+      }
     }
   }
 }

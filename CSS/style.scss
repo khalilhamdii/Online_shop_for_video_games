@@ -23,6 +23,7 @@
 }
 
 // Typography
+
 @font-face {
   font-family: "gotham-bold";
   src: url(./fonts/Gotham-Bold.otf) format("truetype");
@@ -177,8 +178,23 @@ footer {
     text-align: justify;
   }
 
+  select {
+    width: 100px;
+  }
+
+  .selection-name {
+    color: $custom-pink;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin: 0 10px 0 10px;
+    width: 70px;
+  }
+
   .bottom-footer {
     border-top: 1px solid gainsboro;
-    text-align: center;
+
+    .copyrights {
+      color: $custom-gray;
+    }
   }
 }

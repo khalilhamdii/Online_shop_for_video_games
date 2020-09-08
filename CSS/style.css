@@ -173,8 +173,23 @@ footer p {
   text-align: justify;
 }
 
+footer select {
+  width: 100px;
+}
+
+footer .selection-name {
+  color: #d35266;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: 0 10px 0 10px;
+  width: 70px;
+}
+
 footer .bottom-footer {
   border-top: 1px solid gainsboro;
-  text-align: center;
+}
+
+footer .bottom-footer .copyrights {
+  color: #888888;
 }
 /*# sourceMappingURL=style.css.map */

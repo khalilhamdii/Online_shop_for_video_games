@@ -11,6 +11,15 @@
   nav .container {
     width: 100%;
   }
+
+  .featured-games .fa-chevron-left,
+  .featured-games .fa-chevron-right {
+    display: none;
+  }
+
+  .chevron-icon {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

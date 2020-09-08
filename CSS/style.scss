@@ -10,7 +10,6 @@
 // Media Queries
 
 @media (max-width: 576px) {
-  /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
   nav .container {
     width: 100%;
   }
@@ -28,7 +27,6 @@
 }
 
 @media (max-width: 992px) {
-  /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
   nav .container {
     width: 100%;
   }
@@ -75,7 +73,7 @@ $custom-dark-gray: #383838;
 
 // Navbar styling
 
-.footer a {
+footer a {
   color: $custom-gray;
 }
 
@@ -168,11 +166,11 @@ main {
         font-weight: bold;
       }
 
-      #oldprice {
+      .oldprice {
         text-decoration: line-through;
       }
 
-      #newprice {
+      .newprice {
         font-weight: bold;
         color: $custom-pink;
         font-size: 1.2em;
@@ -197,11 +195,11 @@ main {
 
         background-color: white;
 
-        #oldprice {
+        .oldprice {
           text-decoration: line-through;
         }
 
-        #newprice {
+        .newprice {
           font-weight: bold;
           color: $custom-pink;
           font-size: 1.2em;

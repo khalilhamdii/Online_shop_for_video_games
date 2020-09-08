@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +10,7 @@
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="./images/favicon.ico" type="image/icon type" />
+    <link rel="icon" href="./images/favicon.ico" type="image/icon" />
     <script
       src="https://kit.fontawesome.com/89faee3931.js"
       crossorigin="anonymous"
@@ -112,9 +113,12 @@
               placeholder="What do you search for ?"
             />
           </div>
-          <button class="search-btn w-25 ml-3" type="button">
-            <a class="a-search-btn" href="results.html">Search</a>
-          </button>
+          <input
+            class="a-search-btn search-btn ml-3 w-25"
+            type="button"
+            value="Search"
+            onclick="window.location.href='results.html'"
+          />
         </form>
       </div>
       <div class="results-container px-4 bg-faded">
@@ -437,7 +441,7 @@
           <div class="selection py-4 row-xs col-sm-4">
             <div class="d-flex col-xs row-sm align-items-center mb-3">
               <div class="selection-name">COUNTRY</div>
-              <select class="form-control form-control-sm" id="country-select">
+              <select class="form-control form-control-sm" >
                 <option selected>Tunisia</option>
                 <option>USA</option>
                 <option>France</option>
@@ -447,7 +451,7 @@
             </div>
             <div class="d-flex col-xs row-sm align-items-center mb-3">
               <div class="selection-name">LANGUAGE</div>
-              <select class="form-control form-control-sm" id="country-select">
+              <select class="form-control form-control-sm" >
                 <option selected>English</option>
                 <option>Arabic</option>
                 <option>Frensh</option>
@@ -457,7 +461,7 @@
             </div>
             <div class="d-flex col-xs row-sm align-items-center">
               <div class="selection-name">CURRENCY</div>
-              <select class="form-control form-control-sm" id="country-select">
+              <select class="form-control form-control-sm" >
                 <option selected>US Dollar</option>
                 <option>TN Dinar</option>
                 <option>Euro</option>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +10,7 @@
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="./images/favicon.ico" type="image/icon type" />
+    <link rel="icon" href="./images/favicon.ico" type="image/icon" />
     <script
       src="https://kit.fontawesome.com/89faee3931.js"
       crossorigin="anonymous"
@@ -110,9 +111,13 @@
               placeholder="What do you search for ?"
             />
           </div>
-          <button class="search-btn w-25 ml-3" type="button">
-            <a class="a-search-btn" href="results.html">Search</a>
-          </button>
+
+          <input
+            class="a-search-btn search-btn ml-3"
+            type="button"
+            value="Search"
+            onclick="window.location.href='results.html'"
+          />
         </form>
       </div>
 
@@ -140,8 +145,8 @@
               >
                 <i class="far fa-plus-square fa-2x"></i>
                 <div class="price">
-                  <span id="oldprice">$$59.99</span>
-                  <span id="newprice">$44.99</span>
+                  <span class="oldprice">$$59.99</span>
+                  <span class="newprice">$44.99</span>
                 </div>
               </div>
             </div>
@@ -169,8 +174,8 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="oldprice">$39.99</span>
-                    <span id="newprice">$9.99</span>
+                    <span class="oldprice">$39.99</span>
+                    <span class="newprice">$9.99</span>
                   </div>
                 </div>
               </div>
@@ -194,8 +199,8 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="oldprice">$24.99</span>
-                    <span id="newprice">$19.99</span>
+                    <span class="oldprice">$24.99</span>
+                    <span class="newprice">$19.99</span>
                   </div>
                 </div>
               </div>
@@ -219,8 +224,8 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="oldprice">$19.99</span>
-                    <span id="newprice">$7.99</span>
+                    <span class="oldprice">$19.99</span>
+                    <span class="newprice">$7.99</span>
                   </div>
                 </div>
               </div>
@@ -244,8 +249,8 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="oldprice">$39.99</span>
-                    <span id="newprice">$11.99</span>
+                    <span class="oldprice">$39.99</span>
+                    <span class="newprice">$11.99</span>
                   </div>
                 </div>
               </div>
@@ -275,7 +280,7 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="newprice">$14.99</span>
+                    <span class="newprice">$14.99</span>
                   </div>
                 </div>
               </div>
@@ -298,7 +303,7 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="newprice">$29.99 </span>
+                    <span class="newprice">$29.99 </span>
                   </div>
                 </div>
               </div>
@@ -321,7 +326,7 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="newprice">$19.99</span>
+                    <span class="newprice">$19.99</span>
                   </div>
                 </div>
               </div>
@@ -344,7 +349,7 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="newprice">$9.99</span>
+                    <span class="newprice">$9.99</span>
                   </div>
                 </div>
               </div>
@@ -374,7 +379,7 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="newprice">$31.99</span>
+                    <span class="newprice">$31.99</span>
                   </div>
                 </div>
               </div>
@@ -397,7 +402,7 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="newprice">$24.99</span>
+                    <span class="newprice">$24.99</span>
                   </div>
                 </div>
               </div>
@@ -420,7 +425,7 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="newprice">$49.99</span>
+                    <span class="newprice">$49.99</span>
                   </div>
                 </div>
               </div>
@@ -443,7 +448,7 @@
                 >
                   <i class="far fa-plus-square fa-2x"></i>
                   <div class="price">
-                    <span id="newprice">$59.99</span>
+                    <span class="newprice">$59.99</span>
                   </div>
                 </div>
               </div>
@@ -510,7 +515,7 @@
           <div class="selection py-4 row-xs col-sm-4">
             <div class="d-flex col-xs row-sm align-items-center mb-3">
               <div class="selection-name">COUNTRY</div>
-              <select class="form-control form-control-sm" id="country-select">
+              <select class="form-control form-control-sm">
                 <option selected>Tunisia</option>
                 <option>USA</option>
                 <option>France</option>
@@ -520,7 +525,7 @@
             </div>
             <div class="d-flex col-xs row-sm align-items-center mb-3">
               <div class="selection-name">LANGUAGE</div>
-              <select class="form-control form-control-sm" id="country-select">
+              <select class="form-control form-control-sm">
                 <option selected>English</option>
                 <option>Arabic</option>
                 <option>Frensh</option>
@@ -530,7 +535,7 @@
             </div>
             <div class="d-flex col-xs row-sm align-items-center">
               <div class="selection-name">CURRENCY</div>
-              <select class="form-control form-control-sm" id="country-select">
+              <select class="form-control form-control-sm">
                 <option selected>US Dollar</option>
                 <option>TN Dinar</option>
                 <option>Euro</option>

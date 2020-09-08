@@ -8,7 +8,6 @@
 }
 
 @media (max-width: 576px) {
-  /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
   nav .container {
     width: 100%;
   }
@@ -29,7 +28,6 @@
 }
 
 @media (max-width: 992px) {
-  /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
   nav .container {
     width: 100%;
   }
@@ -171,11 +169,11 @@ main .featured-games .item h5 {
   font-weight: bold;
 }
 
-main .featured-games .item #oldprice {
+main .featured-games .item .oldprice {
   text-decoration: line-through;
 }
 
-main .featured-games .item #newprice {
+main .featured-games .item .newprice {
   font-weight: bold;
   color: #d35266;
   font-size: 1.2em;
@@ -200,11 +198,11 @@ main .categories-section .items-container .item h5 {
   min-height: 42px;
 }
 
-main .categories-section .items-container .item #oldprice {
+main .categories-section .items-container .item .oldprice {
   text-decoration: line-through;
 }
 
-main .categories-section .items-container .item #newprice {
+main .categories-section .items-container .item .newprice {
   font-weight: bold;
   color: #d35266;
   font-size: 1.2em;

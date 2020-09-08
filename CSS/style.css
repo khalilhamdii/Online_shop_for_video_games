@@ -14,9 +14,54 @@
   }
 }
 
+@media (max-width: 768px) {
+  .result-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .result-item img,
+  .result-item .item-info {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
+  nav .container {
+    width: 100%;
+  }
+  .custom-flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+}
+
 @media (min-width: 992px) {
   .custom-col-lg-3 {
     max-width: 24% !important;
+  }
+  .results-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+  }
+  .custom-flex-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -204,11 +249,15 @@ footer .bottom-footer .copyrights {
   color: #888888;
 }
 
-.results-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
+.results-container .options-column h5 {
+  margin-top: 20px;
+  color: #383838;
+}
+
+.results-container .options-column .custom-form-check .form-check-label {
+  margin-top: 10px;
+  color: #888888;
+  font-size: 1.2em;
 }
 
 .results-container .results-column {
@@ -223,6 +272,10 @@ footer .bottom-footer .copyrights {
 
 .results-container .results-column .result-item {
   background-color: white;
+}
+
+.results-container .results-column .result-item .item-title {
+  margin-top: 10px;
 }
 
 .results-container .results-column .result-item a {

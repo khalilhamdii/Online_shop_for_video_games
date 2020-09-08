@@ -16,9 +16,41 @@
   }
 }
 
+@media (max-width: 768px) {
+  .result-item {
+    flex-direction: column;
+    img,
+    .item-info {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  /* so the navbar brand won't hover the hamburger button that toggles the navbar links */
+  nav .container {
+    width: 100%;
+  }
+
+  .custom-flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
 @media (min-width: 992px) {
   .custom-col-lg-3 {
     max-width: 24% !important;
+  }
+  .results-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .custom-flex-column {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -214,8 +246,19 @@ footer {
 //#########################
 
 .results-container {
-  display: grid;
-  grid-template-columns: 30% 70%;
+  .options-column {
+    h5 {
+      margin-top: 20px;
+      color: $custom-dark-gray;
+    }
+    .custom-form-check {
+      .form-check-label {
+        margin-top: 10px;
+        color: $custom-gray;
+        font-size: 1.2em;
+      }
+    }
+  }
 
   .results-column {
     border-left: #cacaca 1px solid;
@@ -226,6 +269,9 @@ footer {
     }
     .result-item {
       background-color: white;
+      .item-title {
+        margin-top: 10px;
+      }
       a {
         text-decoration: none;
       }

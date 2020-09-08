@@ -167,9 +167,23 @@ main {
       -webkit-box-shadow: 1px 1px 1px 1px #ccc;
     }
 
-    img {
-      height: 35vh;
-      width: 90%;
+    .item {
+      border-radius: 10px;
+      h5 {
+        color: $custom-pink;
+        font-weight: bold;
+      }
+      #oldprice {
+        text-decoration: line-through;
+      }
+      #newprice {
+        font-weight: bold;
+        color: $custom-pink;
+        font-size: 1.2em;
+      }
+      .fa-plus-square {
+        color: $custom-pink;
+      }
     }
   }
 
@@ -183,6 +197,8 @@ main {
       .item {
         h5 {
           color: $custom-pink;
+          font-weight: bold;
+          min-height: 42px;
         }
         background-color: white;
         #oldprice {

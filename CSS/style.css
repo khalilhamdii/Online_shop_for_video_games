@@ -169,9 +169,27 @@ main .featured-games .fa-chevron-right {
   -webkit-box-shadow: 1px 1px 1px 1px #ccc;
 }
 
-main .featured-games img {
-  height: 35vh;
-  width: 90%;
+main .featured-games .item {
+  border-radius: 10px;
+}
+
+main .featured-games .item h5 {
+  color: #d35266;
+  font-weight: bold;
+}
+
+main .featured-games .item #oldprice {
+  text-decoration: line-through;
+}
+
+main .featured-games .item #newprice {
+  font-weight: bold;
+  color: #d35266;
+  font-size: 1.2em;
+}
+
+main .featured-games .item .fa-plus-square {
+  color: #d35266;
 }
 
 main .categories-section {
@@ -189,6 +207,8 @@ main .categories-section .items-container .item {
 
 main .categories-section .items-container .item h5 {
   color: #d35266;
+  font-weight: bold;
+  min-height: 42px;
 }
 
 main .categories-section .items-container .item #oldprice {

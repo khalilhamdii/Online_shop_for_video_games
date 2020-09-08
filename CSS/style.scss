@@ -19,6 +19,7 @@
 @media (max-width: 768px) {
   .result-item {
     flex-direction: column;
+
     img,
     .item-info {
       width: 100% !important;
@@ -43,6 +44,7 @@
   .custom-col-lg-3 {
     max-width: 24% !important;
   }
+
   .results-container {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -54,37 +56,10 @@
   }
 }
 
-// Typography
-
-@font-face {
-  font-family: "gotham-bold";
-  src: url(./fonts/Gotham-Bold.otf) format("truetype");
-}
-
-@font-face {
-  font-family: "gotham-rounded-light";
-  src: url(./fonts/Gotham-Rounded-Light.otf) format("truetype");
-}
-
-@font-face {
-  font-family: "helvetica-neue-light";
-  src: url(./fonts/helvetica-neue-light.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "helvetica-neue-medium";
-  src: url(./fonts/Helvetica-Neue-Medium.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "helvetica-neue-bold";
-  src: url(./fonts/Helvetica-Neue-Bold.ttf) format("truetype");
-}
-
 // Colors
 
 $custom-pink: #d35266;
-$custom-gray: #888888;
+$custom-gray: #888;
 $custom-dark-gray: #383838;
 
 // Custom classes
@@ -100,8 +75,13 @@ $custom-dark-gray: #383838;
 
 // Navbar styling
 
+.footer a {
+  color: $custom-gray;
+}
+
 .navbar {
   background-color: $custom-dark-gray;
+
   .fa-gamepad,
   .fa-bars {
     color: $custom-pink;
@@ -110,6 +90,7 @@ $custom-dark-gray: #383838;
   .navbar-toggler {
     align-self: center;
   }
+
   a,
   .navbar-toggler {
     color: $custom-gray !important;
@@ -123,6 +104,7 @@ $custom-dark-gray: #383838;
 main {
   .search-section {
     background-color: $custom-pink;
+
     h1,
     h6 {
       text-align: center;
@@ -131,6 +113,7 @@ main {
 
     form {
       flex: 1;
+
       #console-select,
       #category-select,
       #search-box,
@@ -144,7 +127,7 @@ main {
         font-size: 0.875rem;
         border-radius: 0.2rem;
         background-color: $custom-dark-gray;
-        color: #888888;
+        color: #888;
       }
 
       .a-search-btn {
@@ -154,11 +137,21 @@ main {
     }
   }
 
-  .featured-games {
-    h5 {
-      color: $custom-gray;
-    }
+  .categories-section,
+  .featured-games h5 {
+    color: $custom-gray;
+  }
 
+  .results-container .options-column h5 {
+    margin-top: 20px;
+    color: $custom-dark-gray;
+  }
+
+  .fa-plus-square {
+    color: $custom-gray;
+  }
+
+  .featured-games {
     .fa-chevron-left,
     .fa-chevron-right {
       color: $custom-pink;
@@ -169,18 +162,22 @@ main {
 
     .item {
       border-radius: 10px;
+
       h5 {
         color: $custom-pink;
         font-weight: bold;
       }
+
       #oldprice {
         text-decoration: line-through;
       }
+
       #newprice {
         font-weight: bold;
         color: $custom-pink;
         font-size: 1.2em;
       }
+
       .fa-plus-square {
         color: $custom-pink;
       }
@@ -188,10 +185,7 @@ main {
   }
 
   .categories-section {
-    box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.2);
-    h5 {
-      color: $custom-gray;
-    }
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
 
     .items-container {
       .item {
@@ -200,15 +194,19 @@ main {
           font-weight: bold;
           min-height: 42px;
         }
+
         background-color: white;
+
         #oldprice {
           text-decoration: line-through;
         }
+
         #newprice {
           font-weight: bold;
           color: $custom-pink;
           font-size: 1.2em;
         }
+
         .fa-plus-square {
           color: $custom-pink;
         }
@@ -218,15 +216,25 @@ main {
 }
 
 footer {
-  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+
+  // a {
+  //   color: $custom-gray;
+  // }
+
   .list-name {
     border-bottom: 2px solid $custom-pink;
     margin-bottom: 10px;
   }
+
   li a strong {
     color: $custom-pink;
   }
-  a,
+
+  li a:hover {
+    text-decoration: none;
+  }
+
   p,
   span {
     color: $custom-gray;
@@ -263,10 +271,6 @@ footer {
 
 .results-container {
   .options-column {
-    h5 {
-      margin-top: 20px;
-      color: $custom-dark-gray;
-    }
     .custom-form-check {
       .form-check-label {
         margin-top: 10px;
@@ -279,21 +283,23 @@ footer {
   .results-column {
     border-left: #cacaca 1px solid;
     border-right: #cacaca 1px solid;
+
     .search-results {
       color: $custom-gray;
       border-bottom: #cacaca 1px solid;
     }
+
     .result-item {
       background-color: white;
+
       .item-title {
         margin-top: 10px;
       }
+
       a {
         text-decoration: none;
       }
-      .fa-plus-square {
-        color: $custom-gray;
-      }
+
       h3 {
         color: $custom-pink;
       }

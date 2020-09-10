@@ -24,6 +24,11 @@
   .chevron-icon {
     display: none;
   }
+
+  body {
+    min-width: 425px;
+    // overflow: hidden;
+  }
 }
 
 @media (max-width: 768px) {
@@ -34,6 +39,10 @@
     .item-info {
       width: 100% !important;
     }
+  }
+
+  .copyrights {
+    text-align: center;
   }
 }
 

@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
 }
@@ -11,14 +11,15 @@
   nav .container {
     width: 100%;
   }
-
   .featured-games .fa-chevron-left,
   .featured-games .fa-chevron-right {
     display: none;
   }
-
   .chevron-icon {
     display: none;
+  }
+  body {
+    min-width: 425px;
   }
 }
 
@@ -26,13 +27,15 @@
   .result-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .result-item img,
   .result-item .item-info {
     width: 100% !important;
+  }
+  .copyrights {
+    text-align: center;
   }
 }
 
@@ -40,15 +43,14 @@
   nav .container {
     width: 100%;
   }
-
   .custom-flex-row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 10px;
   }
 }
@@ -57,28 +59,26 @@
   .custom-col-lg-3 {
     max-width: 24% !important;
   }
-
   .results-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 30% 70%;
-    grid-template-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
   }
-
   .custom-flex-column {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .box-shadow {
   -webkit-box-shadow: 1px 1px 8px 1px #dcdcdc;
-  box-shadow: 1px 1px 8px 1px #dcdcdc;
+          box-shadow: 1px 1px 8px 1px #dcdcdc;
   border: 1px solid #cacaca;
 }
 
@@ -97,8 +97,8 @@ footer a {
 
 .navbar .navbar-toggler {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .navbar a,
@@ -122,8 +122,8 @@ main .search-section h6 {
 
 main .search-section form {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 main .search-section form #console-select,
@@ -194,7 +194,7 @@ main .featured-games .item .fa-plus-square {
 
 main .categories-section {
   -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 main .categories-section .items-container .item {
@@ -223,7 +223,7 @@ main .categories-section .items-container .item .fa-plus-square {
 
 footer {
   -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 footer .list-name {
@@ -322,3 +322,4 @@ footer .bottom-footer .copyrights {
 .results-container .results-column .result-item .item-info {
   width: 60%;
 }
+/*# sourceMappingURL=style.css.map */

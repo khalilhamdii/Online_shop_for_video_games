@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "gotham-rounded-light", sans-serif;
+}
+
+@media (max-width: 576px) {
+  nav .container {
+    width: 100%;
+  }
+
+  .featured-games .fa-chevron-left,
+  .featured-games .fa-chevron-right {
+    display: none;
+  }
+
+  body {
+    min-width: 425px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .form-select {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .result-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .result-item img,
+  .result-item .item-info {
+    width: 100%;
+  }
+
+  .copyrights {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .result-item img {
+    width: 40%;
+  }
+
+  .result-item .item-info {
+    width: 60%;
+  }
+
+  .custom-col-md-5 {
+    max-width: 43%;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-col-lg-3 {
+    max-width: 24%;
+  }
+
+  .results-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 70%;
+    grid-template-columns: 30% 70%;
+  }
+
+  .custom-flex-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@font-face {
+  font-family: "gotham-bold";
+  src: url(/fonts/Gotham-Bold.woff) format("woff"), url(/fonts/Gotham-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "gotham-rounded-light";
+  src: url(/fonts/Gotham-Rounded-Light.woff) format("woff"), url(/fonts/Gotham-Rounded-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-light";
+  src: url(/fonts/helvetica-neue-light.woff) format("woff"), url(/fonts/helvetica-neue-light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-medium";
+  src: url(/fonts/Helvetica-Neue-Medium.woff) format("woff"), url(/fonts/Helvetica-Neue-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-bold";
+  src: url(/fonts/Helvetica-Neue-Bold.woff) format("woff"), url(/fonts/Helvetica-Neue-Bold.ttf) format("truetype");
+}
+
+.box-shadow {
+  -webkit-box-shadow: 1px 1px 8px 1px #dcdcdc;
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  border: 1px solid #cacaca;
+}
+
+.logo {
+  font-family: "gotham-bold", sans-serif;
+}
+
+footer a {
+  color: #888;
+}
+
+.navbar {
+  background-color: #383838;
+}
+
+.navbar button {
+  margin-top: 10px;
+}
+
+.navbar .nav-link {
+  font-family: "helvetica-neue-medium", sans-serif;
+}
+
+.navbar .fa-gamepad,
+.navbar .fa-bars {
+  color: #d35266;
+}
+
+.navbar .navbar-toggler {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.navbar a,
+.navbar .navbar-toggler {
+  color: #888;
+}
+
+.navbar button:focus {
+  outline: none;
+}
+
+main .search-section {
+  background-color: #d35266;
+}
+
+main .search-section h1,
+main .search-section h6 {
+  text-align: center;
+  color: white;
+}
+
+main .search-section h1 {
+  font-family: "gotham-bold", sans-serif;
+}
+
+main .search-section form #console-select,
+main .search-section form #category-select,
+main .search-section form #search-box,
+main .search-section form .search-btn {
+  height: 50px;
+}
+
+main .search-section form .search-btn {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+  background-color: #383838;
+  color: #888;
+}
+
+main .search-section form .a-search-btn {
+  text-decoration: none;
+  color: #888;
+}
+
+main .categories-section,
+main .featured-games h5,
+main .fa-plus-square {
+  color: #888;
+}
+
+main .categories-section h5,
+main .featured-games h5 {
+  font-family: "helvetica-neue-bold", sans-serif;
+}
+
+main .results-container .options-column h5 {
+  margin-top: 20px;
+  color: #383838;
+}
+
+main .featured-games .fa-chevron-left,
+main .featured-games .fa-chevron-right {
+  color: #d35266;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+main .featured-games .item {
+  border-radius: 10px;
+}
+
+main .featured-games .item h5 {
+  color: #d35266;
+  font-weight: bold;
+  font-family: helvetica-neue-bold, sans-serif;
+}
+
+main .featured-games .item .oldprice {
+  text-decoration: line-through;
+}
+
+main .featured-games .item .newprice {
+  font-weight: bold;
+  color: #d35266;
+  font-size: 1.2em;
+}
+
+main .featured-games .item .fa-plus-square {
+  color: #d35266;
+}
+
+main .categories-section {
+  -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+main .categories-section .items-container .item {
+  background-color: white;
+}
+
+main .categories-section .items-container .item h5 {
+  color: #d35266;
+  font-weight: bold;
+  min-height: 42px;
+  font-family: "helvetica-neue-bold", sans-serif;
+}
+
+main .categories-section .items-container .item .oldprice {
+  text-decoration: line-through;
+}
+
+main .categories-section .items-container .item .newprice {
+  font-weight: bold;
+  color: #d35266;
+  font-size: 1.2em;
+}
+
+main .categories-section .items-container .item .fa-plus-square {
+  color: #d35266;
+}
+
+footer {
+  -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer .list-name {
+  border-bottom: 2px solid #d35266;
+  margin-bottom: 10px;
+}
+
+footer li a strong {
+  color: #d35266;
+}
+
+footer li a:hover {
+  text-decoration: none;
+}
+
+footer p,
+footer span {
+  color: #888;
+}
+
+footer p {
+  text-align: justify;
+}
+
+footer .form-select {
+  min-width: 100px;
+}
+
+footer .selection-name {
+  color: #d35266;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: 0 10px 0 10px;
+  width: 150px;
+}
+
+footer .bottom-footer {
+  border-top: 1px solid gainsboro;
+}
+
+footer .bottom-footer .copyrights {
+  color: #888;
+}
+
+.results-container .options-column .custom-form-check .form-check-label {
+  margin-top: 10px;
+  color: #888;
+  font-size: 1.2em;
+}
+
+.results-container .results-column {
+  border-left: #cacaca 1px solid;
+  border-right: #cacaca 1px solid;
+}
+
+.results-container .results-column .search-results {
+  color: #888;
+  border-bottom: #cacaca 1px solid;
+}
+
+.results-container .results-column .result-item {
+  background-color: white;
+}
+
+.results-container .results-column .result-item .item-title {
+  margin-top: 10px;
+}
+
+.results-container .results-column .result-item a {
+  text-decoration: none;
+}
+
+.results-container .results-column .result-item h3 {
+  color: #d35266;
+  font-family: "helvetica-neue-medium", sans-serif;
+}
+
+.results-container .results-column .result-item .game-category span {
+  color: white;
+  padding: 5px 5px;
+  background-color: #888;
+}
+
+.results-container .results-column .result-item .game-price {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 1px solid white;
+  background-color: #d35266;
+  padding: 5px 20px;
+}

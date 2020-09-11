@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/icon" />
+    <script
+      src="https://kit.fontawesome.com/89faee3931.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <title>Video Games Online Shop</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
+      <nav class="navbar navbar-toggleable-md">
+        <div class="container">
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <a
+            class="navbar-brand d-flex align-items-center logo"
+            href="index.html"
+            ><i class="fas fa-gamepad mr-3 fa-2x"></i>GAME STORE</a
+          >
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><i class="fas fa-home mr-2"></i>HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-th-large mr-2"></i>COLLECTIONS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-shopping-cart mr-2"></i>PURCHASE LIST</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-address-card mr-2"></i>CONTACT US</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="search-section py-2">
+        <h1 class="text-left w-75 mx-auto">GAME STORE</h1>
+        <h6 class="text-left w-75 mx-auto">
+          Buying Video Games Couldn't Be Simpler Than This !
+        </h6>
+        <form
+          class="w-75 mx-auto my-4 d-flex align-items-center justify-content-between"
+        >
+          <div>
+            <select class="form-control form-control-sm" id="console-select">
+              <option value="" selected disabled hidden>Select Platform</option>
+              <option>PC Gaming</option>
+              <option>PlayStation</option>
+              <option>Xbox</option>
+              <option>Nintendo</option>
+              <option>VR Games</option>
+            </select>
+          </div>
+          <div>
+            <select class="form-control form-control-sm" id="category-select">
+              <option value="" selected disabled hidden>Select Category</option>
+              <option>Action/Adventure</option>
+              <option>Fighting</option>
+              <option>Horror</option>
+              <option>Racing</option>
+              <option>RPG</option>
+              <option>Shooter</option>
+              <option>Simulation</option>
+              <option>Sport</option>
+              <option>Strategy</option>
+            </select>
+          </div>
+          <div class="w-50">
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              id="search-box"
+              placeholder="What do you search for ?"
+            />
+          </div>
+          <input
+            class="a-search-btn search-btn ml-3 w-25"
+            type="button"
+            value="Search"
+            onclick="window.location.href='results.html'"
+          />
+        </form>
+      </div>
+      <div class="results-container px-4 bg-faded">
+        <div class="options-column pl-5 p-3">
+          <h5>PLATFORM</h5>
+          <div
+            class="custom-form-check custom-flex-row custom-flex-column flex-wrap"
+          >
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              PC Gaming
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              PlayStation
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Xbox
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Nintendo
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              VR Gaming
+            </label>
+          </div>
+          <h5>CATEGORY</h5>
+          <div
+            class="custom-form-check custom-flex-row custom-flex-column flex-wrap"
+          >
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Action / Adventure
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Fighting
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Horror
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Racing
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              RPG
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Shooter
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Simulation
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Sport
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              Strategy
+            </label>
+          </div>
+          <h5>PRICE RANGE</h5>
+          <div
+            class="custom-form-check custom-flex-row custom-flex-column flex-wrap"
+          >
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              $5 - $10
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              $10 - $20
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              $20 - $50
+            </label>
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              $50 - $100
+            </label>
+          </div>
+        </div>
+        <div class="results-column d-flex flex-column p-3">
+          <span class="search-results mb-4 pb-2">
+            <strong>38</strong> Results for "<strong>Video Game</strong>" Search
+            in "<strong>PC Gaming</strong>" Platform and
+            "<strong>Adventure</strong>" Category
+          </span>
+
+          <div
+            class="result-item box-shadow d-flex align-items-center mb-4 p-3"
+          >
+            <img src="./images/result-img-1.jpg" alt="Marvel's Avengers" />
+            <div class="item-info px-3">
+              <div class="item-title d-flex justify-content-between">
+                <a href="#"> <h3>Marvel's Avengers</h3></a>
+                <a href="#"><i class="far fa-plus-square fa-2x mr-2"></i></a>
+              </div>
+              <div class="my-2">
+                <strong>Available on :</strong> PC/PlayStation/Xbox
+              </div>
+              <p>
+                Assemble your team of Earth’s Mightiest Heroes, embrace your
+                powers, and live your Super Hero dreams.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="game-category">
+                  <span>Action</span>
+                  <span>Adventure</span>
+                  <span>RPG </span>
+                </div>
+
+                <div class="game-price">$59.99</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="result-item box-shadow d-flex align-items-center mb-4 p-3"
+          >
+            <img src="./images/result-img-2.jpg" alt="Horizon Zero Dawn™" />
+            <div class="item-info px-3">
+              <div class="item-title d-flex justify-content-between">
+                <a href="#"> <h3>Horizon Zero Dawn™</h3></a>
+                <a href="#"><i class="far fa-plus-square fa-2x mr-2"></i></a>
+              </div>
+              <div class="my-2">
+                <strong>Available on :</strong> PC/PlayStation/Xbox
+              </div>
+              <p>
+                Experience Aloy’s legendary quest to unravel the mysteries of a
+                future Earth ruled by Machines. Use devastating tactical attacks
+                against your prey and explore a majestic open world in this
+                award-winning action RPG!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="game-category">
+                  <span>Adventure</span>
+                  <span>Open World</span>
+                  <span>Action</span>
+                  <span>RPG</span>
+                </div>
+
+                <div class="game-price">$49.99</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="result-item box-shadow d-flex align-items-center mb-4 p-3"
+          >
+            <img
+              src="./images/result-img-3.jpg"
+              alt="Need for Speed™ Payback"
+            />
+            <div class="item-info px-3">
+              <div class="item-title d-flex justify-content-between">
+                <a href="#"> <h3>Need for Speed™ Payback</h3></a>
+                <a href="#"><i class="far fa-plus-square fa-2x mr-2"></i></a>
+              </div>
+              <div class="my-2">
+                <strong>Available on :</strong> PC/PlayStation/Xbox
+              </div>
+              <p>
+                Set in the underworld of Fortune Valley, you and your crew were
+                divided by betrayal and reunited by revenge to take down The
+                House, a nefarious cartel that rules the city’s casinos,
+                criminals and cops. In this corrupt gambler’s paradise, the
+                stakes are high and The House always wins.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="game-category">
+                  <span>Racing</span>
+                  <span>Combat racing</span>
+                  <span>Action</span>
+                  <span>Offroad</span>
+                </div>
+
+                <div class="game-price">$29.99</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="result-item box-shadow d-flex align-items-center mb-4 p-3"
+          >
+            <img
+              src="./images/result-img-4.jpg"
+              alt="Microsoft Flight Simulator"
+            />
+            <div class="item-info px-3">
+              <div class="item-title d-flex justify-content-between">
+                <a href="#"> <h3>Microsoft Flight Simulator</h3></a>
+                <a href="#"><i class="far fa-plus-square fa-2x mr-2"></i></a>
+              </div>
+              <div class="my-2">
+                <strong>Available on :</strong> PC/PlayStation/Xbox
+              </div>
+              <p>
+                From light planes to wide-body jets, fly highly detailed and
+                accurate aircraft in the next generation of Microsoft Flight
+                Simulator. Test your piloting skills against the challenges of
+                night flying, real-time atmospheric simulation and live weather
+                in a dynamic and living world.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="game-category">
+                  <span>Simulation</span>
+                  <span>Flight</span>
+                  <span>Multiplayer</span>
+                </div>
+
+                <div class="game-price">$59.99</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="result-item box-shadow d-flex align-items-center mb-4 p-3"
+          >
+            <img src="./images/result-img-5.jpg" alt="NBA 2K21" />
+            <div class="item-info px-3">
+              <div class="item-title d-flex justify-content-between">
+                <a href="#"> <h3>NBA 2K21</h3></a>
+                <a href="#"><i class="far fa-plus-square fa-2x mr-2"></i></a>
+              </div>
+              <div class="my-2">
+                <strong>Available on :</strong> PC/PlayStation/Xbox
+              </div>
+              <p>
+                NBA 2K21 is the latest title in the world-renowned, best-selling
+                NBA 2K series, delivering an industry-leading sports video game
+                experience.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="game-category">
+                  <span>Basketball</span>
+                  <span>Sports</span>
+                  <span>Simulation</span>
+                </div>
+
+                <div class="game-price">$39.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="p-4">
+      <div class="row justify-content-around">
+        <div class="row-sm col-lg-3 justify-content-start align-items-center">
+          <a
+            class="navbar-brand d-flex justify-content-center align-items-center"
+            href="#"
+            ><i class="fas fa-gamepad mr-2 fa-2x"></i>
+            <div class="logo">GAME STORE</div></a
+          >
+          <p>
+            This project is about creating an online shop based on an online
+            shop for electronics (<a
+              href="https://www.behance.net/gallery/24796463/ZATTIX"
+              ><strong>Link</strong></a
+            >) . It is a capstone project required at the end of each of the
+            Microverse Main Technical Curriculum sections.
+          </p>
+        </div>
+        <div class="row-sm col-lg-9 row justify-content-around">
+          <ul class="">
+            <li class="list-name">
+              <a href="#"><strong>PLATFORM</strong></a>
+            </li>
+            <li><a href="#">PC Gaming</a></li>
+            <li><a href="#">PlayStation</a></li>
+            <li><a href="#">Xbox</a></li>
+            <li><a href="#">Nintendo</a></li>
+            <li><a href="#">Vr Games</a></li>
+          </ul>
+          <ul class="">
+            <li class="list-name">
+              <a href="#"><strong>CATEGORIES</strong></a>
+            </li>
+            <li><a href="#">Action/Adventure</a></li>
+            <li><a href="#">Fighting</a></li>
+            <li><a href="#">Horror</a></li>
+            <li><a href="#">Racing</a></li>
+            <li><a href="#">RPG</a></li>
+            <li><a href="#">Shooter</a></li>
+            <li><a href="#">Simulation</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Stragety</a></li>
+          </ul>
+          <ul class="">
+            <li class="list-name">
+              <a href="#"><strong>Release Date</strong></a>
+            </li>
+            <li><a href="#">2020</a></li>
+            <li><a href="#">2019</a></li>
+            <li><a href="#">2018</a></li>
+            <li><a href="#">2017</a></li>
+            <li><a href="#">2016</a></li>
+            <li><a href="#">2015</a></li>
+          </ul>
+          <div class="py-4 row-xs col-sm-4">
+            <div
+              class="d-flex col-xs row-sm align-items-center justify-content-end mb-3"
+            >
+              <div class="selection-name">COUNTRY</div>
+              <select class="form-select form-control form-control-sm">
+                <option selected>Tunisia</option>
+                <option>USA</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Germany</option>
+              </select>
+            </div>
+            <div
+              class="d-flex col-xs row-sm align-items-center justify-content-end mb-3"
+            >
+              <div class="selection-name">LANGUAGE</div>
+              <select class="form-select form-control form-control-sm">
+                <option selected>English</option>
+                <option>Arabic</option>
+                <option>Frensh</option>
+                <option>Spanish</option>
+                <option>Deutsh</option>
+              </select>
+            </div>
+            <div
+              class="d-flex col-xs row-sm align-items-center justify-content-end"
+            >
+              <div class="selection-name">CURRENCY</div>
+              <select class="form-select form-control form-control-sm">
+                <option selected>US Dollar</option>
+                <option>TN Dinar</option>
+                <option>Euro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bottom-footer row justify-content-around align-items-center py-3"
+      >
+        <div class="copyrights col-md-10 row-sm">
+          Copyright © 2015 Zattix.com .All rights Reserved.Designed By Mohamed
+          Awad
+        </div>
+        <div class="d-flex col-md-2 row-sm justify-content-center">
+          <a href="#">
+            <i
+              class="fa fa-facebook-square footer-icons m-2"
+              aria-hidden="true"
+            ></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter m-2 footer-icons" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram m-2 footer-icons" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-linkedin m-2 footer-icons" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

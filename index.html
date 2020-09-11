@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/icon" />
+    <script
+      src="https://kit.fontawesome.com/89faee3931.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <title>Video Games Online Shop</title>
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR WITH RESPONSIVE TOGGLE -->
+      <nav class="navbar navbar-toggleable-md">
+        <div class="container">
+          <button
+            class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <a
+            class="navbar-brand d-flex align-items-center logo"
+            href="index.html"
+            ><i class="fas fa-gamepad mr-3 fa-2x"></i>GAME STORE</a
+          >
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"
+                  ><i class="fas fa-home mr-2"></i>HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-th-large mr-2"></i>COLLECTIONS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-shopping-cart mr-2"></i>PURCHASE LIST</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-address-card mr-2"></i>CONTACT US</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="search-section py-5 mb-4">
+        <h1>GAME STORE</h1>
+        <h6>Buying Video Games Couldn't Be Simpler Than This !</h6>
+        <form
+          class="w-75 mx-auto my-4 d-flex align-items-center justify-content-center"
+        >
+          <div>
+            <select class="form-control form-control-sm" id="console-select">
+              <option value="" selected disabled hidden>Select Platform</option>
+              <option>PC Gaming</option>
+              <option>PlayStation</option>
+              <option>Xbox</option>
+              <option>Nintendo</option>
+              <option>VR Games</option>
+            </select>
+          </div>
+          <div>
+            <select class="form-control form-control-sm" id="category-select">
+              <option value="" selected disabled hidden>Select Category</option>
+              <option>Action/Adventure</option>
+              <option>Fighting</option>
+              <option>Horror</option>
+              <option>Racing</option>
+              <option>RPG</option>
+              <option>Shooter</option>
+              <option>Simulation</option>
+              <option>Sport</option>
+              <option>Strategy</option>
+            </select>
+          </div>
+          <div class="w-50">
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              id="search-box"
+              placeholder="What do you search for ?"
+            />
+          </div>
+
+          <input
+            class="a-search-btn search-btn ml-3"
+            type="button"
+            value="Search"
+            onclick="window.location.href='results.html'"
+          />
+        </form>
+      </div>
+
+      <div class="featured-games px-sm-5">
+        <h5 class="mx-3">
+          <i class="fas fa-award mr-2"></i>FEATURED & RECOMMENDED
+        </h5>
+        <div class="py-4 d-flex justify-content-around align-items-center">
+          <i class="fas fa-chevron-left fa-2x"></i>
+          <div
+            class="item bg-faded box-shadow d-flex align-items-center mx-3 p-4"
+          >
+            <img
+              class="w-50"
+              src="./images/death-stranding.jpg"
+              alt="death-stranding"
+            />
+            <div class="item-info w-50 pl-3 d-flex flex-column">
+              <h5>Death stranding</h5>
+              <div class="my-2">
+                <strong>Available on :</strong> PC/PlayStation/Xbox
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <i class="far fa-plus-square fa-2x"></i>
+                <div>
+                  <span class="oldprice">$59.99</span>
+                  <span class="newprice">$44.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-right fa-2x"></i>
+        </div>
+      </div>
+      <div class="categories-section p-5 bg-faded">
+        <div>
+          <h5><i class="fas fa-bolt mr-2"></i>SPECIAL OFFERS</h5>
+          <div
+            class="items-container row justify-content-around align-items-center py-4"
+          >
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img class="w-100 mb-2" src="./images/offer-1.jpg" alt="SIMS 4" />
+              <div class="item-info">
+                <h5>SIMS 4</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="oldprice">$39.99</span>
+                    <span class="newprice">$9.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/offer-2.jpg"
+                alt="Monster train"
+              />
+              <div class="item-info">
+                <h5>Monster Train</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="oldprice">$24.99</span>
+                    <span class="newprice">$19.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/offer-3.jpg"
+                alt="Rainbow Six Siege"
+              />
+              <div class="item-info">
+                <h5>Rainbow Six Siege</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="oldprice">$19.99</span>
+                    <span class="newprice">$7.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/offer-4.jpg"
+                alt="The Witcher : Wild Hunt"
+              />
+              <div class="item-info">
+                <h5>The Witcher : Wild Hunt</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="oldprice">$39.99</span>
+                    <span class="newprice">$11.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5><i class="fas fa-chevron-circle-up mr-2"></i>TOP SELLERS</h5>
+          <div
+            class="items-container row justify-content-around align-items-center py-4"
+          >
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/action-img-1.jpg"
+                alt="Counter-Strike: Global Offensive"
+              />
+              <div class="item-info">
+                <h5>Counter-Strike: Global Offensive</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">$14.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/action-img-2.jpg"
+                alt="Grand Theft Auto V"
+              />
+              <div class="item-info">
+                <h5>Grand Theft Auto V</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">$29.99 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/action-img-3.jpg"
+                alt="Fall Guys: Ultimate Knockout"
+              />
+              <div class="item-info">
+                <h5>Fall Guys: Ultimate Knockout</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">$19.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/action-img-4.jpg"
+                alt="Left 4 Dead 2"
+              />
+              <div class="item-info">
+                <h5>Left 4 Dead 2</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">$9.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5><i class="fas fa-stopwatch mr-2"></i>NEW RELEASES</h5>
+          <div
+            class="items-container row justify-content-around align-items-center py-4"
+          >
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/new-release-img-1.jpg"
+                alt="Control Ultimate Edition"
+              />
+              <div class="item-info">
+                <h5>Control Ultimate Edition</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">$31.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/new-release-img-2.jpg"
+                alt="Necromunda: Underhive Wars"
+              />
+              <div class="item-info">
+                <h5>Necromunda: Underhive Wars</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">$24.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/new-release-img-3.jpg"
+                alt="Crusader Kings III"
+              />
+              <div class="item-info">
+                <h5>Crusader Kings III</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">$49.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="item box-shadow custom-col-lg-3 custom-col-md-5 row-sm align-items-center mb-4 p-3"
+            >
+              <img
+                class="w-100 mb-2"
+                src="./images/new-release-img-4.jpg"
+                alt="Wasteland 3"
+              />
+              <div class="item-info">
+                <h5>Wasteland 3</h5>
+                <div class="my-2">
+                  <strong>Available on :</strong> PC/PlayStation/Xbox
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <i class="far fa-plus-square fa-2x"></i>
+                  <div>
+                    <span class="newprice">$59.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="p-4">
+      <div class="row justify-content-around">
+        <div class="row-sm col-lg-3 justify-content-start align-items-center">
+          <a
+            class="navbar-brand d-flex justify-content-center align-items-center"
+            href="#"
+            ><i class="fas fa-gamepad mr-2 fa-2x"></i>
+            <div class="logo">GAME STORE</div></a
+          >
+          <p>
+            This project is about creating an online shop based on an online
+            shop for electronics (<a
+              href="https://www.behance.net/gallery/24796463/ZATTIX"
+              ><strong>Link</strong></a
+            >) . It is a capstone project required at the end of each of the
+            Microverse Main Technical Curriculum sections.
+          </p>
+        </div>
+        <div class="row-sm col-lg-9 row justify-content-around">
+          <ul class="">
+            <li class="list-name">
+              <a href="#"><strong>PLATFORM</strong></a>
+            </li>
+            <li><a href="#">PC Gaming</a></li>
+            <li><a href="#">PlayStation</a></li>
+            <li><a href="#">Xbox</a></li>
+            <li><a href="#">Nintendo</a></li>
+            <li><a href="#">Vr Games</a></li>
+          </ul>
+          <ul class="">
+            <li class="list-name">
+              <a href="#"><strong>CATEGORIES</strong></a>
+            </li>
+            <li><a href="#">Action/Adventure</a></li>
+            <li><a href="#">Fighting</a></li>
+            <li><a href="#">Horror</a></li>
+            <li><a href="#">Racing</a></li>
+            <li><a href="#">RPG</a></li>
+            <li><a href="#">Shooter</a></li>
+            <li><a href="#">Simulation</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Stragety</a></li>
+          </ul>
+          <ul class="">
+            <li class="list-name">
+              <a href="#"><strong>Release Date</strong></a>
+            </li>
+            <li><a href="#">2020</a></li>
+            <li><a href="#">2019</a></li>
+            <li><a href="#">2018</a></li>
+            <li><a href="#">2017</a></li>
+            <li><a href="#">2016</a></li>
+            <li><a href="#">2015</a></li>
+          </ul>
+          <div class="py-4 row-xs col-sm-4">
+            <div
+              class="d-flex col-xs row-sm align-items-center justify-content-end mb-3"
+            >
+              <div class="selection-name">COUNTRY</div>
+              <select class="form-select form-control form-control-sm">
+                <option selected>Tunisia</option>
+                <option>USA</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Germany</option>
+              </select>
+            </div>
+            <div
+              class="d-flex col-xs row-sm align-items-center justify-content-end mb-3"
+            >
+              <div class="selection-name">LANGUAGE</div>
+              <select class="form-select form-control form-control-sm">
+                <option selected>English</option>
+                <option>Arabic</option>
+                <option>Frensh</option>
+                <option>Spanish</option>
+                <option>Deutsh</option>
+              </select>
+            </div>
+            <div
+              class="d-flex col-xs row-sm align-items-center justify-content-end"
+            >
+              <div class="selection-name">CURRENCY</div>
+              <select class="form-select form-control form-control-sm">
+                <option selected>US Dollar</option>
+                <option>TN Dinar</option>
+                <option>Euro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bottom-footer row justify-content-around align-items-center py-3"
+      >
+        <div class="copyrights col-md-10 row-sm">
+          Copyright © 2015 Zattix.com .All rights Reserved.Designed By Mohamed
+          Awad
+        </div>
+        <div class="d-flex col-md-2 row-sm justify-content-center">
+          <a href="#">
+            <i
+              class="fa fa-facebook-square footer-icons m-2"
+              aria-hidden="true"
+            ></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter m-2 footer-icons" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram m-2 footer-icons" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-linkedin m-2 footer-icons" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,413 @@
+// CSS reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "gotham-rounded-light", sans-serif;
+}
+
+// Media Queries
+
+@media (max-width: 576px) {
+  nav .container {
+    width: 100%;
+  }
+
+  .featured-games {
+    .fa-chevron-left,
+    .fa-chevron-right {
+      display: none;
+    }
+  }
+
+  body {
+    min-width: 425px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .form-select {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .result-item {
+    flex-direction: column;
+
+    img,
+    .item-info {
+      width: 100%;
+    }
+  }
+
+  .copyrights {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .result-item {
+    img {
+      width: 40%;
+    }
+
+    .item-info {
+      width: 60%;
+    }
+  }
+
+  .custom-col-md-5 {
+    max-width: 43%;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-col-lg-3 {
+    max-width: 24%;
+  }
+
+  .results-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .custom-flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Typography
+
+@font-face {
+  font-family: "gotham-bold";
+  src:
+    url(/fonts/Gotham-Bold.woff) format("woff"),
+    url(/fonts/Gotham-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "gotham-rounded-light";
+  src:
+    url(/fonts/Gotham-Rounded-Light.woff) format("woff"),
+    url(/fonts/Gotham-Rounded-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-light";
+  src:
+    url(/fonts/helvetica-neue-light.woff) format("woff"),
+    url(/fonts/helvetica-neue-light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-medium";
+  src:
+    url(/fonts/Helvetica-Neue-Medium.woff) format("woff"),
+    url(/fonts/Helvetica-Neue-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica-neue-bold";
+  src:
+    url(/fonts/Helvetica-Neue-Bold.woff) format("woff"),
+    url(/fonts/Helvetica-Neue-Bold.ttf) format("truetype");
+}
+
+// Colors
+
+$custom-pink: #d35266;
+$custom-gray: #888;
+$custom-dark-gray: #383838;
+
+// Custom classes
+
+.box-shadow {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  border: 1px solid #cacaca;
+}
+
+.logo {
+  font-family: "gotham-bold", sans-serif;
+}
+
+// #########################
+// HOME PAGE STYLING
+//#########################
+
+// Navbar styling
+
+footer a {
+  color: $custom-gray;
+}
+
+.navbar {
+  background-color: $custom-dark-gray;
+
+  button {
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    font-family: "helvetica-neue-medium", sans-serif;
+  }
+
+  .fa-gamepad,
+  .fa-bars {
+    color: $custom-pink;
+  }
+
+  .navbar-toggler {
+    align-self: center;
+  }
+
+  a,
+  .navbar-toggler {
+    color: $custom-gray;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+main {
+  .search-section {
+    background-color: $custom-pink;
+
+    h1,
+    h6 {
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      font-family: "gotham-bold", sans-serif;
+    }
+
+    form {
+      #console-select,
+      #category-select,
+      #search-box,
+      .search-btn {
+        height: 50px;
+      }
+
+      .search-btn {
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        border-radius: 0.2rem;
+        background-color: $custom-dark-gray;
+        color: #888;
+      }
+
+      .a-search-btn {
+        text-decoration: none;
+        color: $custom-gray;
+      }
+    }
+  }
+
+  .categories-section,
+  .featured-games h5,
+  .fa-plus-square {
+    color: $custom-gray;
+  }
+
+  .categories-section h5,
+  .featured-games h5 {
+    font-family: "helvetica-neue-bold", sans-serif;
+  }
+
+  .results-container .options-column h5 {
+    margin-top: 20px;
+    color: $custom-dark-gray;
+  }
+
+  .featured-games {
+    .fa-chevron-left,
+    .fa-chevron-right {
+      color: $custom-pink;
+      border-radius: 50%;
+      padding: 10px;
+      -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+    }
+
+    .item {
+      border-radius: 10px;
+
+      h5 {
+        color: $custom-pink;
+        font-weight: bold;
+        font-family: helvetica-neue-bold, sans-serif;
+      }
+
+      .oldprice {
+        text-decoration: line-through;
+      }
+
+      .newprice {
+        font-weight: bold;
+        color: $custom-pink;
+        font-size: 1.2em;
+      }
+
+      .fa-plus-square {
+        color: $custom-pink;
+      }
+    }
+  }
+
+  .categories-section {
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+
+    .items-container {
+      .item {
+        h5 {
+          color: $custom-pink;
+          font-weight: bold;
+          min-height: 42px;
+          font-family: "helvetica-neue-bold", sans-serif;
+        }
+
+        background-color: white;
+
+        .oldprice {
+          text-decoration: line-through;
+        }
+
+        .newprice {
+          font-weight: bold;
+          color: $custom-pink;
+          font-size: 1.2em;
+        }
+
+        .fa-plus-square {
+          color: $custom-pink;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+
+  // a {
+  //   color: $custom-gray;
+  // }
+
+  .list-name {
+    border-bottom: 2px solid $custom-pink;
+    margin-bottom: 10px;
+  }
+
+  li a strong {
+    color: $custom-pink;
+  }
+
+  li a:hover {
+    text-decoration: none;
+  }
+
+  p,
+  span {
+    color: $custom-gray;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .form-select {
+    min-width: 100px;
+  }
+
+  .selection-name {
+    color: $custom-pink;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin: 0 10px 0 10px;
+    width: 150px;
+  }
+
+  .bottom-footer {
+    border-top: 1px solid gainsboro;
+
+    .copyrights {
+      color: $custom-gray;
+    }
+  }
+}
+
+// #########################
+// RESULTS PAGE STYLING
+//#########################
+
+.results-container {
+  .options-column {
+    .custom-form-check {
+      .form-check-label {
+        margin-top: 10px;
+        color: $custom-gray;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .results-column {
+    border-left: #cacaca 1px solid;
+    border-right: #cacaca 1px solid;
+
+    .search-results {
+      color: $custom-gray;
+      border-bottom: #cacaca 1px solid;
+    }
+
+    .result-item {
+      background-color: white;
+
+      .item-title {
+        margin-top: 10px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h3 {
+        color: $custom-pink;
+        font-family: "helvetica-neue-medium", sans-serif;
+      }
+
+      .game-category {
+        span {
+          color: white;
+          padding: 5px 5px;
+          background-color: $custom-gray;
+        }
+      }
+
+      .game-price {
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        border: 1px solid white;
+        background-color: $custom-pink;
+        padding: 5px 20px;
+      }
+    }
+  }
+}

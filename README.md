@@ -14,10 +14,7 @@ The webpage is built with business specifications ( See link above ) and using H
 
 ## Screenshots
 
-![screenshot](/screenshots/screenshot-1.PNG)
-![screenshot](/screenshots/screenshot-2.PNG)
-![screenshot](/screenshots/screenshot-3.PNG)
-![screenshot](/screenshots/screenshot-4.PNG)
+![screenshot](/screenshots/main.png)
 
 ## Built With
 

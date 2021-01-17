@@ -1,7 +1,7 @@
 ## CAPSTONE PROJECT : Online shop for video games
 
-</h1>This project is about creating an online shop based on an online shop for electronics (https://www.behance.net/gallery/24796463/ZATTIX). It is a capstone project required at the end of each of the Microverse Main Technical Curriculum sections.
-In this repository, I created an online shop for video games that is responsive to both Mobile & ipad view and includes three breakpoints:
+</h1>Game Store is an online shop based on this electronics store UI design (https://www.behance.net/gallery/24796463/ZATTIX). It is a capstone project required at the end of each of the Microverse Main Technical Curriculum sections.
+In this repository, I created an online shop for video games that is responsive to both Mobile & Ipad views and includes three breakpoints:
 
 - The first breakpoint is at 576px.
 - The second breakpoint is at 768px.
